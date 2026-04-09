@@ -1,0 +1,16 @@
+[
+  {
+    "id": "plant",
+    "title": "Créer la vie 🌱",
+    "description": "Planter une graine",
+    "category": "Vie",
+    "unlocked": true
+  },
+  {
+    "id": "sport",
+    "title": "Premier effort 💪",
+    "description": "Faire 10 pompes",
+    "category": "Sport",
+    "unlocked": true
+  }
+]

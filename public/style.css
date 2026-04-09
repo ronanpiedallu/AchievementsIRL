@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #1e3a8a;
+  border-bottom: 4px solid #facc15;
+}
+
+/* 📊 Progress bar */
+.progress-bar {
+  width: 80%;
+  height: 15px;
+  background: #1e293b;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #22c55e;
+  transition: 0.5s;
+}
+
+/* 📱 Responsive grid */
+#achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.card {
+  background: #1e293b;
+  border: 2px solid #facc15;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* 🔥 Animation hover */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* 🔒 Locked */
+.locked {
+  opacity: 0.4;
+}
+
+/* 🎉 Déblocage animation */
+.unlocked {
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+/* 📂 catégories */
+#categories {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.category {
+  padding: 5px 10px;
+  background: #334155;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.category.active {
+  background: #facc15;
+  color: black;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
