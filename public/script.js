@@ -1,6 +1,18 @@
 const API_URL = "https://achievementsirl.onrender.com";
 
-fetch("https://achievementsirl.onrender.com/api/achievements");
+async function loadAchievements() {
+  const res = await fetch(API_URL + "/api/achievements");
+  achievements = await res.json();
+
+  renderCategories();
+  renderAchievements();
+  updateProgress();
+}
+
+async function unlock(id) {
+  await fetch(API_URL + "/api/unlock/" + id, { method: "POST" });
+  loadAchievements();
+}
 
 let achievements = [];
 let currentCategory = "All";
