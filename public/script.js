@@ -1,3 +1,7 @@
+const API_URL = "https://ton-backend.onrender.com";
+
+fetch(API_URL + "/api/achievements");
+
 let achievements = [];
 let currentCategory = "All";
 
