@@ -1,4 +1,4 @@
-const API_URL = "https://ton-backend.onrender.com";
+const API_URL = "https://achievementsirl.onrender.com";
 
 fetch(API_URL + "/api/achievements");
 
