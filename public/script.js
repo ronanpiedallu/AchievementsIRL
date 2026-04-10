@@ -1,6 +1,6 @@
 const API_URL = "https://achievementsirl.onrender.com";
 
-fetch(API_URL + "/api/achievements");
+fetch("https://achievementsirl.onrender.com/api/achievements");
 
 let achievements = [];
 let currentCategory = "All";
